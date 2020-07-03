@@ -1,3 +1,5 @@
+#This is my first project where I use backttracking algorithm to solve a simple 9x9 sudoku puzzle. 
+# You need to fill this board below with your question where empty spaces should be replaced with 0.
 board = [
     [0,0,7,0,6,0,0,3,1],
     [0,0,0,3,0,1,6,0,2],
@@ -25,14 +27,14 @@ def print_board(board):
             else:
                 print(str(board[i][j]) + " ", end='')
         
-
+#Finds all the empty boxes that were assigned 0
 def find_empty(bo):
     for i in range(len(bo)):
         for j in range(len(bo[0])):
             if bo[i][j]==0:
                 return (i,j) # row, column (y,x)
 
-
+#checks whether the number can be assigned at the given position
 def valid(board,num, pos):
     #check row
     for i in range(len(board[0])):
@@ -54,7 +56,7 @@ def valid(board,num, pos):
                 return False
 
     return True
-
+# Uses find_empty() and valid() to first find the empty boxes and then check if you can assign a number to it using valid. If true  the number is assigned otherwise you move to the next number(1-9).
 def solve(board):
     find =find_empty(board)
     if not find:
