@@ -11,19 +11,21 @@ You can either enter your own solvable board or you can set it to random. Where 
 This project is inspired by TechwithTim.
 
 # How To Play
-<p>
+
 If you don't have pygame[2.0.1] installed in your environment:
   Create a new environment and install the neccessary libraries from cmd
   Command: 'pip install -r requirements.txt'
-</p>
 
 Paste these files all together in desired folder and simply run the file run.py from cmd. 
 Command: 'python run.py'.
 
 ## Keys
 To place a number: Select a box and press the digit you please to enter and then press ENTER.
-For a hint: Press h. A random box will be filed with a correct digit.
+
+For a hint: Press H. A random box will be filed with a correct digit.
+
 To see the visual representation of the sudoku solving: Press SPACE.
+
 [1]: https://img.shields.io/badge/pygame-1.9.6-red
 [2]: https://img.shields.io/badge/python-3.6.6-blue
 [3]: https://img.shields.io/badge/license-MIT-orange
